@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.background{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(2px);
+    display: none;
+}
+nav{
+    display: flex;
+    margin-left: 10rem;
+    margin-top: 40px;
+}
+.close{
+    display: none;
+}
+.menu{
+    margin-top: 3px;
+    display: none;
+    margin-right: 20px;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    margin-left: 50px;
+    margin-top: 3px;
+}
+ul li{
+    
+    list-style: none;
+    color:  hsl(219, 9%, 45%);
+}
+ul li:hover{
+    color:hsl(220, 13%, 13%) ;
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.entete_images{
+    display: flex;
+    margin-left: 20rem;
+}
+.panier img{
+    cursor: pointer;
+}
+.panierAfter{
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    background-color: hsl(26, 100%, 55%);
+    position: absolute;
+    top: 4%;
+    left: 81.5%;
+    padding-left: 5px;
+    padding-top: 2px;
+    color: hsl(0, 0%, 100%);
+    display: none;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cart{
+    border: 2px solid hsl(0, 0%, 100%);
+    width: 20vw;
+    height: 25vh;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 10px 15px hsla(210, 2%, 18%, 0.582);
+    position:absolute;
+    left:72%;
+    top: 12%;
+    transition: 0.5s all;
+    display: none;
+}
+
+.cart .cart-text{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.cart hr{
+    position: relative;
+    left: -74%;
+    top: 10px;
+    width: 16.7rem;
+}
+.cart p{
+    text-align: center;
+    margin-top: 20%;
+    color: hsl(219, 9%, 45%);
+    font-weight: 600;
+}
+#empty{
+    display: none;
+}
+.component{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cart-image{
+    margin-top: 25px;
+}
+.cart-svg{
+    margin-top: 25px;
+}
+.texts{
+    margin-top: -15px;
+}
+.component img{
+    height: 50px;
+    border-radius: 5px;
+}
+.component p{
+    font-size: 10px;
+    font-weight: 400;
+}
+.result{
+    color: hsl(0, 0%, 0%);
+    font-size: 12px;
+    font-weight: 600;
+}
+.cart-boutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.cart-boutton button{
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    padding: 15px 100px;
+
+}
+.avatar img{
+    width: 50px;
+    border: 3px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+    margin-left: 35px;
+    margin-top: -15px;
+    cursor: pointer;
+}
+hr{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10rem;
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.sneakers_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    
+}
+.principal_sneaker img{
+    width: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.list_sneakers{
+    display: flex;
+    gap: 10px;
+}
+.list_sneakers img{
+    width: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.list_sneakers img:hover{
+    border: 3px solid  hsl(26, 100%, 55%);
+    opacity: 0.4;
+}
+.sneakers_information {
+    margin-top: 50px;
+}
+.sneakers_information p{
+    text-transform: uppercase;
+    color: hsl(219, 9%, 45%);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.sneakers_information h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+.text p{
+    text-transform: none;
+    font-size: 15px;
+}
+.sneakers_information h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+#percent{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.sneakers_information h4{
+    font-weight: 400;
+    margin-top: 15px;
+    color: hsl(219, 9%, 45%);
+}
+
+.buttons{
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.numButton{
+    background-color:hsl(220, 14%, 75%) ;
+    padding: 10px 20px;
+    padding-left: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    
+}
+#minus{
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: -30px;
+}
+#plus{
+    margin-left: 40px;
+    cursor: pointer;
+}
+.addButton{
+    display: flex;
+}
+.addButton button{
+    background-color:hsl(26, 100%, 55%) ;
+    padding: 10px 50px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.views{
+    display: none;
+}
+.sneakers_view{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 51%;
+    transform: translate(-50%,-50%);
+    
+}
+.principal_sneaker_view img{
+    width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.list_sneakers_view{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.list_sneakers_view img{
+    width: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.list_sneakers_view img:hover{
+    border: 3px solid  hsl(26, 100%, 55%);
+    opacity: 0.4;
+}
+.close_view {
+    position: absolute;
+    top: 12%;
+    left: 62%;
+    cursor: pointer;
+}
+#previous{
+    position: absolute;
+    left:34.5%;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+#next{
+    position: absolute;
+    left:62.9%;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.chevrons svg{
+    background-color:hsl(0, 0%, 100%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 11px 12px;
+    cursor: pointer;
+}
+.chevrons_mobile{
+    display:none;
+}
+
