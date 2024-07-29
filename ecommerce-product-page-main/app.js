@@ -143,10 +143,10 @@ list_sneaker_view.forEach(list_sneaker_view => {
 })
 
 const list_sneaker_viewImage = [
-    '/images/image-product-1.jpg',
-    '/images/image-product-2.jpg',
-    '/images/image-product-3.jpg',
-    '/images/image-product-4.jpg',
+    './images/image-product-1.jpg',
+    './images/image-product-2.jpg',
+    './images/image-product-3.jpg',
+    './images/image-product-4.jpg',
 ];
 
 let ImageView = 0;
@@ -154,8 +154,8 @@ let ImageView = 0;
 
 nextButton.addEventListener('click', () => {
     if (ImageView < list_sneaker_viewImage.length) {
-        const containerViewSrc = list_sneaker_viewImage[ImageView];
-        principal_sneaker_view.innerHTML = `<img src="${containerViewSrc}" alt="Sneaker Image">`;
+        const containerView = list_sneaker_viewImage[ImageView];
+        principal_sneaker_view.innerHTML = `<img src="${containerView}" alt="Sneaker Image">`;
         ImageView++;
     } else {
         ImageView = 0;
@@ -167,9 +167,8 @@ previousButton.addEventListener('click', () => {
         const containerViewSrc = list_sneaker_viewImage[ImageView];
         principal_sneaker_view.innerHTML = `<img src="${containerViewSrc}" alt="Sneaker Image">`;
         ImageView--;
-    } else {
-        ImageView ='/images/image-product-1.jpg';
-    }
+    } 
+    
 });
 
 
